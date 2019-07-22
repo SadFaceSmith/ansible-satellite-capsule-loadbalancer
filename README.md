@@ -6,7 +6,11 @@ Role to perform Satellite and Capsule side configuration for Load Balancing
 Requirements
 ------------
 
-Satellite and two Capsules servers must have already been provisioned. Network connectivity and appropriate firewall rules must be in place to allow proper communication. Forward and reverse DNS lookups must work for the Satellite,Capsules and load balancer VIP.
+Satellite and two Capsules servers must have already been provisioned. 
+
+Network connectivity and appropriate firewall rules must be in place to allow proper communication. 
+
+Forward and reverse DNS lookups must work for the Satellite,Capsules and load balancer VIP.
 
 Role Variables
 --------------
@@ -34,11 +38,6 @@ sat6-capsule-02.example.com
 | cert_path1: |  /tmp/{{capsule1 }}.tar |
 | cert_path2: |  /tmp/{{capsule2 }}.tar |
 | lb_server: | capsule.{{ domain }} |
-
-Dependencies
-------------
-
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
 
 Example Playbook
 ----------------
